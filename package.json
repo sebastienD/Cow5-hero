@@ -21,5 +21,17 @@
     "webpack": "1.12.14"
   },
   "name": "cow5-hero",
-  "description": "Cow5-hero: An Ionic project"
+  "description": "Cow5-hero: An Ionic project",
+  "cordovaPlugins": [
+    "cordova-plugin-device",
+    "cordova-plugin-console",
+    "cordova-plugin-whitelist",
+    "cordova-plugin-splashscreen",
+    "cordova-plugin-statusbar",
+    "ionic-plugin-keyboard"
+  ],
+  "cordovaPlatforms": [
+    "android",
+    "ios"
+  ]
 }

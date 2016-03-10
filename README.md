@@ -38,6 +38,7 @@ Delete ionicplatform parameter for ios style.
 ### android
 
 * install [android sdk](http://developer.android.com/sdk/index.html)
+* see https://spring.io/guides/gs/android/ for configuration
 * install [genymotion](https://www.genymotion.com/) emulator
 
 > $ ionic run android
