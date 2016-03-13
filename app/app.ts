@@ -7,7 +7,7 @@ import {Type} from 'angular2/core';
 
 
 @App({
-  template: '<ion-nav [root]="rootPage"></ion-nav>',
+  template: '<ion-nav [root]="rootPage" swipe-back-enabled="false"></ion-nav>',
   config: {} // http://ionicframework.com/docs/v2/api/config/Config/
 })
 export class MyApp {
