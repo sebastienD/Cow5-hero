@@ -10,3 +10,6 @@ plugins/
 Thumbs.db
 .idea/
 *.iml
+
+.io-config.json
+ionic.project
