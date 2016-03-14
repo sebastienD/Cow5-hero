@@ -1,23 +1,29 @@
 <ion-navbar *navbar>
   <ion-title>
-    <img class="logo" src="/img/codeofwar.png"/>
+    <img class="logo" src="img/codeofwar.png"/>
   </ion-title>
 </ion-navbar>
 
-<ion-content padding class="page-home">
-  <h2>Bienvenu !</h2>
-  <p>
-    Entrer la clé d'api qui vous a été fourni lors de votre inscription.
-  </p>
-  <p>
-    Si vous n'êtes pas inscrit, faites le !
-    C'est par <a href="http://www.codeofwar.net/">ici</a>.
-  </p>
-  <div class="list list-inset">
-    <label class="item item-input">
-      <i class="icon ion-settings placeholder-icon"></i>
-      <ion-input type="text" placeholder="Clé d'api"></ion-input>
-    </label>
-  </div>
-  <button primary menuToggle (click)="goToNextPage()">Valider</button>
+<ion-content class="page-home">
+  <ion-card>
+    <ion-card-header>
+      Bienvenu !
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        Entrer la clé d'api qui vous a été fourni lors de votre inscription.
+      </p>
+      <p>
+        Si vous n'êtes pas inscrit, faites le !
+        C'est par <a href="http://www.codeofwar.net/">ici</a>.
+      </p>
+      <ion-list class="section">
+        <ion-item>
+          <ion-label stacked>Clé d'api</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-list>
+      <button primary menuToggle (click)="goToNextPage()">Valider</button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
