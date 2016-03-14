@@ -1,6 +1,5 @@
 import {App, Platform} from 'ionic-angular';
 import {HomePage} from './pages/home/home';
-import {ApiPage} from './pages/pageapi/pageapi'
 
 // https://angular.io/docs/ts/latest/api/core/Type-interface.html
 import {Type} from 'angular2/core';
@@ -12,7 +11,6 @@ import {Type} from 'angular2/core';
 })
 export class MyApp {
   rootPage: Type = HomePage;
-  //rootPage: Type = ApiPage;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {

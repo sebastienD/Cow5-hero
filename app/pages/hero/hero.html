@@ -1,0 +1,23 @@
+<ion-navbar *navbar>
+  <ion-title>
+    <img class="logo" src="/img/codeofwar.png"/>
+  </ion-title>
+</ion-navbar>
+
+<ion-content padding>
+  <ion-list>
+    <ion-header>
+      <ion-item>
+        <ion-input type="text" placeholder="Choisissez votre héro." (input)="searchMovieDB($event, searchKey)"></ion-input>
+      </ion-item>
+    </ion-header>
+
+    <ion-item *ngFor="#hero of heros" (click)="itemTapped($event, hero)">
+      <ion-avatar item-left>
+        <img src="https://image.tmdb.org/t/p/w92{{hero.imgName}}"/>
+      </ion-avatar>
+      <h2>{{hero.name}}</h2>
+      <p class="item-description">{{hero.overview}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>
