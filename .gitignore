@@ -11,5 +11,8 @@ Thumbs.db
 .idea/
 *.iml
 
+app/**/*.js
+app/**/*.js.map
+
 .io-config.json
 ionic.project
